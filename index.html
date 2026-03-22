@@ -22,16 +22,34 @@
         }
 
         body{
-            background: rgb(7, 0, 18);
+            background: rgb(12, 0, 32);
         }
 
         .myFace{
             box-shadow: rgba(55, 2, 135, 0.16) 0px 0px 50px;
             transition: .5s all ease-in-out;
         }
-
+        
         .myFace:hover{
             transform: scale(1.04);
+        }
+        
+        .card{
+            background-color: rgba(234, 230, 255, 0);
+            border: solid rgb(155, 155, 196) 1.2px;
+            border-radius: 15px;
+            box-shadow: rgba(141, 127, 199, 0.407) 0px 0px 10px;
+            color: white;
+        }
+        
+        .click{
+            transition: 0.4s all ease-in-out;
+            transform: scale(1.02);
+        }
+        
+        .click:hover{
+            box-shadow: rgba(255, 255, 255, 0.46) 0px 0px 20px;
+            transform: rotate(1deg);
         }
     </style>
 </head>
@@ -54,16 +72,16 @@
                         <a class="nav-link active fw-bold" aria-current="page" href="/" style="color: white;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="/about/">About</a>
+                        <a class="nav-link fw-medium" href="/">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-medium" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Others
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/contact/">Contact</a></li>
+                            <li><a class="dropdown-item" href="/">Contact</a></li>
                             <li><a class="dropdown-item" href="/gallery/">Gallery</a></li>
-                            <li><a class="dropdown-item" href="/sosmed/">Sosmed</a></li>
+                            <li><a class="dropdown-item" href="/">Sosmed</a></li>
                         </ul>
                     </li>
                 </ul>              
@@ -111,44 +129,52 @@
         </div>
         <!-- carousel end -->
 
-        <!-- this is hero -->
-        <div class="row-fluid text-center align-items-center" style="margin-top: 96px; margin-bottom: 64px;">
-            <div class="col-12 px-0 w-100">
-                <img src="assets/myFace.jpg" alt="my-face" class="myFace img-fluid rounded-4 my-4" style="max-height: 265px;">
-                <h2 class="m-0 w-auto" style="word-wrap: break-word; font-family:'Poppins', sans-serif; font-weight:600; color: rgb(147, 111, 231); text-shadow: 0 0 5px rgb(76, 0, 255), 0 0 20px rgb(76, 0, 255), 0 0 0px rgb(76, 0, 255);">Welcome to Canhpoug!</h2>
-                <p class="jorni" style="word-wrap: break-word; color: white;">Hello World, Welcome to my <span style="color: rgb(80, 31, 195); font-weight: 700; font-style: italic;">JOURNEY!</span></p>
+        <div class="container-fluid text-center m-0 p-0 mb-5">
+            <div class="row align-items-center m-0">
+                <div class="col-8 p-0">
+                    <!-- this is hero -->
+                    <div class="row-fluid text-center align-items-center" style="margin-top: 84px;">
+                        <div class="px-0">
+                            <img src="assets/myFace.jpg" alt="my-face" class="myFace img-fluid rounded-4 my-4" style="max-height: 265px;">
+                            <h2 class="m-0 w-auto" style="word-wrap: break-word; font-family:'Poppins', sans-serif; font-weight:600; color: rgb(147, 111, 231); text-shadow: 0 0 5px rgb(76, 0, 255), 0 0 20px rgb(76, 0, 255), 0 0 0px rgb(76, 0, 255);">Welcome to Canhpoug!</h2>
+                            <p class="jorni" style="word-wrap: break-word; color: white;">Hello World, Welcome to my <span style="color: rgb(80, 31, 195); font-weight: 700; font-style: italic;">JOURNEY!</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-0">
+                    <!-- this is card -->
+                    <div class="row text-dark mt-4 mx-0 mb-4 px-3 justify-content-start align-items-center">
+                        <!-- <div class="col-sm-4 mb-3 mb-sm-0 g-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CONTACT ME HERE</h5>
+                                    <p class="card-text">You can contact me here when you need.</p>
+                                    <a href="/contact/" class="btn btn-dark d-block">Contact Me</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-sm-6 mb-3 mb-sm p-0 g-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Check My Gallery</h5>
+                                    <!-- <p class="card-text">Check what an insane thing that i do in my journey.</p> -->
+                                    <a href="about/" class="click btn btn-light d-block">Click Me!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-4 g-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CHECK DEEPLY</h5>
+                                    <p class="card-text">Please knowing myself more right now!</p>
+                                    <a href="sosmed/" class="btn btn-dark d-block">Ceck My Sosmed</a>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
             </div>
         </div>
 
-        <!-- this is card -->
-        <div class="row text-dark mt-4 mx-0 mb-5">
-            <div class="col-sm-4 mb-3 mb-sm-0 g-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">CONTACT ME HERE</h5>
-                        <p class="card-text">You can contact me here when you need.</p>
-                        <a href="/contact/" class="btn btn-dark d-block">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0 g-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">ABOUT MY TOUR LIFE</h5>
-                        <p class="card-text">Check what an insane thing that i do in my journey.</p>
-                        <a href="about/" class="btn btn-dark d-block">About Me</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 g-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">CHECK DEEPLY</h5>
-                        <p class="card-text">Please knowing myself more right now!</p>
-                        <a href="sosmed/" class="btn btn-dark d-block">Ceck My Sosmed</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
